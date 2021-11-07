@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sở Thích Của Bạn</title>
+</head>
+<body>
+    <div class="form1">
+        <form method="get">
+            <table>
+                <tr>
+                    <th colspan="4" style="background-color: darkorange; color: #ffffff">SỞ THÍCH CỦA BẠN</th>
+                </tr>
+                <tr>
+                    <td class="col">Họ và tên</td>
+                    <td colspan="2">
+                        <input type="text" name="yourname" size="30">
+                    </td>
+        
+                </tr>
+                <tr>
+                    <td class="col">Email</td>
+                    <td colspan="2">
+                        <input type="text" name="email" size="20">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col">Sở thích</td>
+                    <td>
+                        <label for="thethao">
+                            <input type="checkbox" id="thethao">Thể thao
+                        </label>
+                    </td>
+                    <td>
+                        <label for="amnhac">
+                            <input type="checkbox" id="amnhac">Âm nhạc
+                        </label>
+                    </td>
+                    <td>
+                        <label for="docsach">
+                            <input type="checkbox" id="docsach">Đọc sách
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="3"></td>
+                    <td>
+                        <label for="luotweb">
+                            <input type="checkbox" id="luotweb">Lướt web
+                        </label>
+                    </td>
+                    <td>
+                        <label for="choigame">
+                            <input type="checkbox" id="choigame">Chơi game
+                        </label>
+                    </td>
+                    <td>
+                        <label for="dienanh">
+                            <input type="checkbox" id="dienanh">Điện ảnh
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="dulich">
+                            <input type="checkbox" id="dulich">Du lịch
+                        </label>
+                    </td>
+        
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Gửi thông tin">
+                    </td>
+                    <td>
+                        <input type="reset" value="Nhập lại">
+                    </td>
+        
+                </tr>
+            </table>
+        </form>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="form2">
+        <form action="" method="get">
+            <table>
+                <tr>
+                    <td id="title" colspan="2"><b>ĐĂNG KÝ HỌC VIÊN</b></td>
+                </tr>
+                <tr>
+                    <td>Họ và tên</td>
+                    <td>
+                        <input type="text" size="25">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ngày sinh</td>
+                    <td colspan="2">
+                        <input type="text" size="10" maxlength="10">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Giới tính</td>
+                    <td>
+                        <input type="radio" name="gioitinh">Nam
+                        <input type="radio" name="gioitinh">Nữ
+                    </td>
+                </tr>
+                <tr>
+                    <td>Địa chỉ</td>
+                    <td>
+                        <input  id="diachi" type="text" size="25">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Lớp</td>
+                    <td>
+                        <select name="lop" id="lop">
+                            <option>--Chọn lớp--</option>
+                            <option>Khóa Java</option>
+                            <option>Khóa PHP</option>
+                            <option>Khóa Python</option>
+                            <option>Khóa NodeJs</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>
+                        <input type="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Điện thoại</td>
+                    <td>
+                        <input type="tel" maxlength="10">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Đăng ký">
+                        <input type="reset" value="Nhập lại">
+                    </td>
+                </tr>
+            </table>
+    </div>
+
+<style>
+    .form1 table {
+        padding: 3px 5px;
+        border: 5px solid lightblue;
+        width: 500px;
+    }
+
+    .form1 .col {
+        text-align: right;
+        color: blue;
+    }
+
+    .form1 label {
+        color: coral;
+    }
+
+    .form2 table{
+            border: 1px solid;
+            background-color: #f1f166;
+            width: 500px;
+    }
+    .form2 th, td {
+            padding: 10px;
+    }
+
+    .form2 #title {
+            color: blue;
+            background-color: rgba(125, 252, 245, .8);
+    }
+
+    .form2 #diachi {
+            height: 40px;
+    }
+</style>
+</body>
+</html>
